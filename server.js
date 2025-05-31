@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('view'));
+app.use(express.static('views'));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');

@@ -5,6 +5,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('views'));
 
+app.use(cors({ optionsSuccessStatus: 200 }));
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });

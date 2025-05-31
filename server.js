@@ -3,8 +3,6 @@ const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('views'));
-
 app.use(cors({ optionsSuccessStatus: 200 }));
 
 app.get('/', (req, res) => {
